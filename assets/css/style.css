@@ -1,515 +1,165 @@
-* {
-	margin: 0;
-	padding: 0;
+.header a, a:hover {
+	color: #f0ad4e;
+	text-decoration: none;
 }
 
-body {
-	font-size: 1.2em;
-	background-color: #fff;
-	color: #555;
+.header h1 {
+	letter-spacing: 15px;
+	font-size: 300%;
 }
 
-p {
-	padding: 0 0 20px 0;
-	line-height: 1.7em;
+.header p {
+	color: white !important;
+	font-size: 90%;
+	letter-spacing: 3px;
 }
 
-input[type="text"], input[type="password"], input[type="search"] {
-	color: 5d5d5d;
-	width: 60%;
-	padding: 8px;
+
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+    color: #fff;
+    background-color: #346270;
 }
 
-input, textarea {
-	outline: none;
-	border: none;
-	border: solid 1px #f2f2f2;
-}
-
-h1, h2 {
-	font: normal 170% 'century gothic', arial;
-	margin: 0 0 15px 0;
-	padding: 15px 0 5px 0;
-	color: #000;
-}
-
-h2 {
-	font-size: 140%;
-}
-
-a, a:hover {
-	outline: none;
-	text-decoration: underline;
-	color: #aeb002;
-}
-
-ul {
-	margin: 2px 0 22px 17px;
-}
-
-ul li {
-	margin: 0 0 6px 0;
-	padding: 0 0 4px 5px;
-	line-height: 1.5em;
-}
-
-hr {
-	border: solid 1px #f3f3f3;
-}
-
-.header {
-	background-color: darkslateblue;
-	height: 177px;
-	font-size: 0.8em;
-	padding-left: 0px;
-	padding-right: 0px;
-	min-width: 900px;
-}
-
-.main, .logo, .menubar, .site-content, .footer {
-	margin-left: auto;
-	margin-right: auto;
-}
-
-.logo {
-	width: 880px;
-	padding-bottom: 40px;
-}
-
-.logo h1, .logo h2 {
-	font: normal 300% 'century gothic', arial, sans-serif;
-	margin: 0 0 0 9px;
-}
-
-.logo-text h1, .logo-text h1 a, .logo-text h1 a:hover {
-	padding: 22px 0 0 0;
+.nav-pills>li>a {
 	color: #fff;
-	letter-spacing: 0.1em;
-	text-decoration: none;
 }
 
-.logo-text h2 {
-	font-size: 0.9em;
-	padding: 4px 0 0 0;
-	color: #999;
+.nav-pills>li>a:hover {
+	background-color: #346270;
 }
 
-.menubar {
-	width: 900px;
-	height: 46px;
+
+.navbar-inverse {
+    padding: 1%;
+    border-radius: 0;
 }
 
-ul.menu {
-	float: right;
+@media (max-width: 767px) {
+	.nav-pills>li {
+		float: none;
+	}
+
+	.nav-pills {
+		text-align: center;
+	}
+
+	.header h1 { 
+	    font-size: 280%;
+	    letter-spacing: 5px;
+	}
+
+	.header {
+		text-align: center;
+	}
+} 
+
+
+.clear {
+	clear: both;
+	height: 63px;
 }
 
-ul.menu li {
-	float: left;
-	padding: 0 0 0 9px;
-	list-style: none;
-	margin: 1px 2px 0 0;
+.wrapper {
+	min-height: 100%;
 }
 
-ul.menu li a {
-	font: normal 100% 'trebuchet ms' sans-serif;
-	display: block;
-	height: 20px;
-	padding: 6px 35px 5px 28px;
-	color: #fff;
-	text-decoration: none;
+html, body {
+	height: 100%;
 }
 
-ul.menu li.selected a {
-	color: #aeb002;
+
+.films_block {
+	text-align: center;
 }
 
-ul.menu li a:hover {
-	color: #e4ec04;
-}
-
-.site-content {
-	width: 880px;
-	overflow: hidden;
-	margin: 20px auto 0 auto;
-	background-color: white;
-}
-
-.sidebar-container {
-	float: right;
-	width: 224px;
-}
-
-.sidebar {
-	float: right;
-	width: 222px;
-	padding: 5%;
-	margin: 0 0 16px 0;
-	border: solid 1px #f2f2f2;
-	border-radius: 5px;
-	background-color: #f9f9f9;
-}
-
-.btn {
-	padding: 8px;
-	background-color: white;
-	cursor: pointer;
-}
-
-.sidebar h2 {
-	color: #136cb2;
-}
-
-.lables-passreg-text {
-	font-size: 0.7em;
-	margin-top: 3%;
-	margin-left: 2%;
-}
-
-.sidebar ul {
-	margin: 0;
-
-}
-
-.sidebar ul li {
-	list-style-type: none;
-	margin: 0;
-}
-
-.sidebar .rating-sidebar {
-	float: right;
-}
-
-.content {
-	text-align: left;
-	width: 620px;
-	padding: 0 0 0 5px;
-	float: left;
-}
-
-.content a {
-	text-decoration: none;
-}
-
-.films-block {
+.films_block img {
 	margin-bottom: 5%;
-}
-
-.films-block img {
 	border-radius: 5px;
 	border: solid 5px #dad7d5;
-	width: 22%;
+	width: 100%;
 }
 
-.posts-content {
-	font-size: 0.8em;
-}
-
-.info-film-page {
-	margin-top: 2%;
+.film_label {
+	padding: 2%;
 	margin-bottom: 4%;
 }
 
-.info-film-page .label {
-	font-size: 1.2em;
+.margin-8 {
+	margin-top: 8%;
 }
 
-.info-film-page .value {
-	font-size: 1em;
-	color: #49945a;
+
+.panel {
+	border: none;
+}
+
+.panel-body {
+	background-color: #f9f9f9;
+}
+
+.panel-info>.panel-heading {
+	background-color: #f0ad4e;
+	color: white;
+	border-color: transparent;
+}
+
+.sidebar-header {
+	font-size: 120%;
+	letter-spacing: 2px;
+}
+
+
+.form-control {
+	border-radius: 0px;
+}
+
+.input-lg {
+	font-size: 14px;
+}
+
+.list-group-item-warning {
+	color: #8a6d3b;
+	background-color: #f9f9f9;
+}
+
+.badge {
+	background-color: #000000;
+}
+
+
+.info-block {
+	font-size: 120%;
+}
+
+.info-block .badge {
+	font-size: 80%;
+}
+
+.info-block span{
 	margin-right: 3%;
 }
 
-.description-film {
-	margin-bottom: 15%;
-}
-
-.description-film img {
-	float: left;
-	margin-right: 2%;
-	border-radius: 5px;
-	border: solid 5px #dad7d5;
-}
-
-.reviews {
-	margin-bottom: 4%;
-	font-size: 0.9em;
-}
-
-.reviews .review-name {
-	background-color: #7268ad;
-	color: white;
-	padding: 1%;
-	border-top-left-radius: 5px;
-	border-top-right-radius: 5px;
-}
-
-.reviews .review-text {
-	padding-top: 2%;
-	padding-bottom: 2%;
-	padding-left: 2%;
-}
-
-.send {
-	margin-bottom: 4%;
-}
-
-.send input[type="text"], textarea {
-	border: solid 1px #c3c3c3;
-	margin-bottom: 2%;
-}
-
-.send input[type="text"] {
-	width: 98%;
-}
-
-.send textarea {
-	width: 624px;
+textarea.form-control {
 	height: 200px;
 }
 
-.send input[type="submit"] {
-	background-color: #7268ad;
-	padding: 3%;
-	color: white;
-	border-radius: 5px;	
-}
 
-.send_contact input[type="text"] {
-  width: 500px;
-}
-
-.send_contact textarea {
-  width: 516px;
-}
-
-.info-film {
-	margin-bottom: 5%;
-	background-color: #f9f9f9;
-	padding: 5%;
-	height: 270px;
-}
-
-.info-film img {
-	float: left;
-	margin-right: 2%;
-	border-radius: 5px;
-	border: solid 5px #dad7d5;
-	width: 25%;
-}
-
-.button {
-	background-color: #7268ad;
-	padding: 2%;
-	color: white;
-	border-radius: 5px;
-	float: right;
-	margin-top: 5%;
-	clear: both;
-	font-size: 0.8em;
-}
-
-.button a {
-	color: white;
-}
-
-table {
-	width: 100%;
-	border: solid 1px #f4f4f4;
-}
-
-td {
-	padding: 2%;
-	border: solid 1px #f4f4f4;
-}
-
-td img {
-	width: 60px;
+.table tbody>tr>td.vert-align {
 	vertical-align: middle;
 }
 
-.center {
-	text-align: center;
+
+footer {
+	color: #666;
+	background: #222;
+	padding: 17px 0 18px 0;
+	border-top: 1px solid #000;
 }
 
-.rating {
-	font-weight: bold;
+footer a {
+	color: #999;
 }
 
-.footer {
-	width: 100%;
-	height: 100px;
-	padding: 28px 0 5px 0;
-	text-align: center;
-	background-color: darkslateblue;
-	color: #a8aa94;
-	margin-left: 0;
-	margin-right: 0;
-	min-width: 900px;
-}
-
-.footer a {
-	color: #a8aa94;
-	text-decoration: none;
-}
-
-.footer a:hover {
-	color: white;
-	text-decoration: none;
-}
-
-.footer p {
-	padding: 0 0 10px 0;
-}
-
-
-/* CSS Mobile */
-
-@media only screen
-and (min-device-width: 320px)
-and (max-device-width: 568px) {
-
-	.header {
-		background-color: #257965;
-		min-width: 100%;
-		height: 20%;
-		text-align: center;
-	}
-
-	.logo {
-		width: 100%;
-	}
-
-	.logo h1 {
-		font: normal 235% 'century gothic', arial, sans-serif;
-	}
-
-	.logo h2 {
-		font: normal 100% 'century gothic', arial, sans-serif;
-		color: white;
-	}
-
-	ul.menu {
-		float: none;
-	}
-
-	ul.menu li {
-		margin: 0;
-		padding: 0;
-		float: none;
-	}
-
-	.site-content {
-		width: 100%;
-	}
-
-	.menubar {
-		width: 100%;
-		height: 100%;
-	}
-
-	.content {
-		width: 100%;
-		text-align: center;
-	}
-
-	.site-content {
-		width: 100%;
-		text-align: center;
-	}
-
-	.content h1, h2 {
-		font: normal 110% 'century gothic', arial;	
-	}
-
-	.films-block img {
-		width: 43%;
-	}
-
-	.posts-content p{
-		line-height: 1.5em;
-		padding: 3%;
-		text-align: left;
-	}
-
-	.posts p {
-		font-size: 120%;
-	}
-
-	.sidebar-container {
-		display: none;
-	}
-
-	.footer {
-		display: none;
-	}
-
-	/* films page */
-
-	.info-film {
-		float: none;
-		height: 100%;
-	}
-
-	.info-film img {
-		width: 90%;
-		margin-bottom: 5%;
-	}
-
-	.button {
-		float: none;
-	}
-
-	/* rating page */
-
-	table {
-		display: block;
-	}
-
-	th {
-		font-size: 75%;
-	}
-
-	td {
-		padding: 0;
-		margin: 0;
-		font-size: 95%;
-		text-align: left;
-	}
-
-	/* show page*/
-
-	iframe {
-		width: 88%;
-		height: 100%;
-	}
-
-	.description-film {
-		width: 90%;
-		text-align: left;
-		margin-left: 2%;
-	}
-
-	.description-film img {
-		float: none;
-		width: 73%;
-		display: block;
-		margin: 0;
-		padding: 0;
-		margin-left: 11%;
-		margin-bottom: 7%;
-	}
-
-	.reviews {
-		text-align: left;
-		width: 96%;
-	}
-
-	.send input[type="text"] {
-		width: 80%;
-	}
-
-	.send textarea {
-		width: 85%;
-	}
-
+footer a:hover {
+	color: #efefef;
 }
